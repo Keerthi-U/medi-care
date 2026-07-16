@@ -2,7 +2,7 @@ import { createContext, useContext, useState } from "react";
 
 const AuthContext = createContext();
 
-const API = "import.meta.env.VITE_API_URL";
+const API = import.meta.env.VITE_API_URL;
 
 const ADMIN = {
   email:    "admin@medicare.com",
