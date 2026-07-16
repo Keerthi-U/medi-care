@@ -1,0 +1,61 @@
+/* ─────────────────────────────────────────
+   Metric Card
+───────────────────────────────────────── */
+.metric-card {
+  background: #ffffff;
+  border: 0.5px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 1.25rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  box-sizing: border-box;
+  transition: box-shadow 0.2s ease;
+}
+
+.metric-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
+}
+
+/* ─────────────────────────────────────────
+   Icon
+───────────────────────────────────────── */
+.metric-icon {
+  font-size: 24px;
+  margin-bottom: 2px;
+}
+
+/* ─────────────────────────────────────────
+   Label
+───────────────────────────────────────── */
+.metric-label {
+  font-size: 12px;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+/* ─────────────────────────────────────────
+   Value
+───────────────────────────────────────── */
+.metric-value {
+  font-size: 28px;
+  font-weight: 700;
+  color: #111827;
+  line-height: 1;
+}
+
+/* ─────────────────────────────────────────
+   Delta Trend
+───────────────────────────────────────── */
+.metric-delta {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.delta-up {
+  color: #16a34a;
+}
+
+.delta-down {
+  color: #dc2626;
+}

@@ -1,0 +1,243 @@
+/* ─────────────────────────────────────────
+   Sidebar
+───────────────────────────────────────── */
+.sidebar {
+  width: 280px;
+  height: 100vh;
+  background: #0F172A;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 100;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+/* ─── Logo ─── */
+.sidebar-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0.25rem 0.5rem 1.25rem;
+}
+
+.sidebar-logo-icon {
+  font-size: 28px;
+  line-height: 1;
+}
+
+.sidebar-logo-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #FFFFFF;
+  letter-spacing: -0.02em;
+}
+
+.sidebar-logo-sub {
+  font-size: 11px;
+  color: #64748B;
+  margin-top: 1px;
+}
+
+/* ─── Divider ─── */
+.sidebar-divider {
+  height: 1px;
+  background: #1E293B;
+  margin: 0.5rem 0;
+}
+
+/* ─── Nav Label ─── */
+.sidebar-nav-label {
+  font-size: 10px;
+  font-weight: 600;
+  color: #475569;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 0.75rem 0.75rem 0.4rem;
+}
+
+/* ─── Nav ─── */
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.sidebar-nav-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: var(--radius-md);
+  border: none;
+  border-left: 3px solid transparent;
+  cursor: pointer;
+  text-align: left;
+  font-size: 13px;
+  font-weight: 400;
+  color: #94A3B8;
+  background: transparent;
+  transition: all 0.15s ease;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+}
+
+.sidebar-nav-item.hovered {
+  background: #1E293B;
+  color: #CBD5E1;
+}
+
+.sidebar-nav-item.active {
+  background: linear-gradient(135deg, #0D9488 0%, #0B7D72 100%);
+  color: #FFFFFF;
+  font-weight: 600;
+  border-left: 3px solid #5EEAD4;
+  box-shadow: 0 4px 12px rgba(13, 148, 136, 0.3);
+}
+
+.sidebar-nav-icon {
+  font-size: 17px;
+  flex-shrink: 0;
+  width: 20px;
+  text-align: center;
+}
+
+.sidebar-nav-text { flex: 1; }
+
+/* ─── Badge ─── */
+.sidebar-badge {
+  font-size: 10px;
+  font-weight: 700;
+  background: #EF4444;
+  color: #fff;
+  border-radius: var(--radius-full);
+  padding: 1px 7px;
+  min-width: 20px;
+  text-align: center;
+}
+
+/* ─── Spacer ─── */
+.sidebar-spacer { flex: 1; }
+
+/* ─── Footer ─── */
+.sidebar-footer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0.875rem 1rem;
+  background: #1E293B;
+  border-radius: var(--radius-lg);
+  margin-top: 0.75rem;
+  border: 1px solid #334155;
+}
+
+.sidebar-avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #0D9488, #0B7D72);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.sidebar-footer-info { flex: 1; overflow: hidden; }
+
+.sidebar-footer-name {
+  font-size: 12px;
+  font-weight: 600;
+  color: #F1F5F9;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sidebar-footer-role {
+  font-size: 10px;
+  color: #64748B;
+  margin-top: 1px;
+}
+
+.sidebar-online {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 10px;
+  color: #34D399;
+  margin-top: 3px;
+  font-weight: 500;
+}
+
+.sidebar-online-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #34D399;
+  display: inline-block;
+  animation: pulse-dot 2s infinite;
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+/* ─── Logout Button ─── */
+.sidebar-logout-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(239,68,68,0.2);
+  background: rgba(239,68,68,0.06);
+  color: #F87171;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: var(--font-family);
+  transition: all 0.15s;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.sidebar-logout-btn:hover {
+  background: rgba(239,68,68,0.15);
+  color: #FCA5A5;
+  border-color: rgba(239,68,68,0.3);
+}
+
+/* ─── Patient Website Button ─── */
+.sidebar-patient-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(13,148,136,0.25);
+  background: rgba(13,148,136,0.08);
+  color: #5EEAD4;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: var(--font-family);
+  transition: all 0.15s;
+  margin-bottom: 6px;
+  text-align: left;
+}
+
+.sidebar-patient-btn:hover {
+  background: rgba(13,148,136,0.18);
+  border-color: rgba(13,148,136,0.4);
+}

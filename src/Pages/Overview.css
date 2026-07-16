@@ -1,0 +1,258 @@
+/* ─────────────────────────────────────────
+   Overview Page
+───────────────────────────────────────── */
+.overview {
+  padding: 2rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+/* ─── Header ─── */
+.overview-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.overview-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  letter-spacing: -0.02em;
+}
+
+.overview-sub {
+  font-size: 13px;
+  color: var(--color-text-muted);
+  margin-top: 3px;
+}
+
+.overview-live-badge {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  background: #DCFCE7;
+  color: #15803D;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+}
+
+.overview-live-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #16A34A;
+  animation: pulse-live 1.5s infinite;
+}
+
+@keyframes pulse-live {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%       { opacity: 0.5; transform: scale(0.85); }
+}
+
+/* ─────────────────────────────────────────
+   Metrics Grid — 4 columns
+───────────────────────────────────────── */
+.overview-metrics {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+/* ─── Metric Card ─── */
+.ov-card {
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  transition: all 0.2s;
+  position: relative;
+  overflow: hidden;
+}
+
+.ov-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: var(--card-color);
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+}
+
+.ov-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.ov-card-icon  { font-size: 24px; margin-bottom: 2px; }
+.ov-card-label { font-size: 12px; color: var(--color-text-muted); font-weight: 500; }
+.ov-card-value { font-size: 28px; font-weight: 700; color: var(--color-text-primary); line-height: 1; }
+
+.ov-card-delta { font-size: 12px; font-weight: 500; margin-top: 2px; }
+.ov-card-delta.up   { color: #16A34A; }
+.ov-card-delta.down { color: #DC2626; }
+
+.ov-card-bar {
+  height: 4px;
+  border-radius: var(--radius-full);
+  margin-top: 8px;
+  overflow: hidden;
+}
+
+.ov-card-bar-fill {
+  height: 100%;
+  border-radius: var(--radius-full);
+  transition: width 0.6s ease;
+}
+
+/* ─────────────────────────────────────────
+   Bottom Row
+───────────────────────────────────────── */
+.overview-bottom {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 1rem;
+}
+
+.ov-section {
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.ov-section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ov-section-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  letter-spacing: -0.01em;
+}
+
+.ov-section-count {
+  font-size: 12px;
+  background: var(--color-primary-light);
+  color: var(--color-primary);
+  padding: 3px 10px;
+  border-radius: var(--radius-full);
+  font-weight: 500;
+}
+
+/* ─── Empty ─── */
+.ov-empty {
+  font-size: 13px;
+  color: var(--color-text-muted);
+  text-align: center;
+  padding: 1.5rem;
+  background: var(--color-border-light);
+  border-radius: var(--radius-md);
+  line-height: 1.6;
+}
+
+/* ─── Appointments List ─── */
+.ov-appt-list { display: flex; flex-direction: column; gap: 10px; }
+
+.ov-appt-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--color-border);
+}
+.ov-appt-row:last-child { border-bottom: none; }
+
+.ov-appt-avatar {
+  width: 36px; height: 36px; border-radius: 50%;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-hover));
+  color: #fff; font-size: 14px; font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+
+.ov-appt-info { flex: 1; }
+.ov-appt-name { font-size: 13px; font-weight: 600; color: var(--color-text-primary); }
+.ov-appt-meta { font-size: 11px; color: var(--color-text-muted); margin-top: 2px; }
+
+.ov-appt-status {
+  font-size: 10px; font-weight: 600;
+  padding: 3px 10px; border-radius: var(--radius-full);
+}
+.status-pending   { background: #FEF9C3; color: #854D0E; }
+.status-confirmed { background: #DCFCE7; color: #15803D; }
+.status-rejected  { background: #FEE2E2; color: #B91C1C; }
+.status-completed { background: #E0E7FF; color: #3730A3; }
+
+/* ─── Department Bars ─── */
+.ov-dept-list { display: flex; flex-direction: column; gap: 10px; }
+
+.ov-dept-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+}
+
+.ov-dept-name {
+  width: 90px;
+  color: var(--color-text-secondary);
+  font-weight: 500;
+  flex-shrink: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ov-dept-bar-bg {
+  flex: 1;
+  height: 8px;
+  background: var(--color-border);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.ov-dept-bar-fill {
+  height: 8px;
+  border-radius: var(--radius-full);
+  transition: width 0.6s ease;
+}
+
+.ov-dept-pct {
+  width: 36px;
+  text-align: right;
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+/* ─── Quick Stats ─── */
+.ov-quick-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  padding-top: 1rem;
+  border-top: 1px solid var(--color-border);
+  margin-top: 4px;
+}
+
+.ov-quick-stat {
+  background: var(--color-border-light);
+  border-radius: var(--radius-md);
+  padding: 10px;
+  text-align: center;
+}
+
+.ov-quick-value { font-size: 20px; font-weight: 700; }
+.ov-quick-label { font-size: 10px; color: var(--color-text-muted); margin-top: 2px; font-weight: 500; }

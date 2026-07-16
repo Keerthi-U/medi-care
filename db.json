@@ -1,0 +1,210 @@
+{
+  "doctors": [
+    {
+      "id": "DT2001",
+      "profileImage": "https://randomuser.me/api/portraits/men/32.jpg",
+      "name": "Dr. Mick Thompson",
+      "username": "mickthompson",
+      "phone": "+1 54546 11111",
+      "email": "mick@medicare.com",
+      "dob": "1985-03-10",
+      "experience": "12+ Years",
+      "department": "Cardiology",
+      "designation": "Cardiologist",
+      "medicalLicenseNumber": "ML100000001",
+      "languages": [
+        "English"
+      ],
+      "bloodGroup": "A +ve",
+      "gender": "Male",
+      "bio": "Dr. Mick Thompson specializes in interventional cardiology with over 12 years of experience treating complex heart conditions.",
+      "featured": true,
+      "available": "Mon, 20 Jan 2025",
+      "status": "Available",
+      "rating": 4.8,
+      "reviewCount": 124,
+      "appointment": {
+        "type": "In-Person",
+        "consultationCharge": 499
+      }
+    },
+    {
+      "id": "DT2002",
+      "profileImage": "https://randomuser.me/api/portraits/women/44.jpg",
+      "name": "Dr. Sarah Johnson",
+      "username": "sarahjohnson",
+      "phone": "+1 54546 22222",
+      "email": "sarah@medicare.com",
+      "dob": "1988-07-15",
+      "experience": "10+ Years",
+      "department": "Orthopedics",
+      "designation": "Orthopedic Surgeon",
+      "medicalLicenseNumber": "ML100000002",
+      "languages": [
+        "English",
+        "Spanish"
+      ],
+      "bloodGroup": "B +ve",
+      "gender": "Female",
+      "bio": "Dr. Sarah Johnson is an expert in joint replacement and sports injury rehabilitation.",
+      "featured": true,
+      "available": "Wed, 22 Jan 2025",
+      "status": "Available",
+      "rating": 4.9,
+      "reviewCount": 98,
+      "appointment": {
+        "type": "In-Person",
+        "consultationCharge": 450
+      }
+    },
+    {
+      "id": "DT2003",
+      "profileImage": "https://randomuser.me/api/portraits/women/65.jpg",
+      "name": "Dr. Emily Carter",
+      "username": "emilycarter",
+      "phone": "+1 54546 33333",
+      "email": "emily@medicare.com",
+      "dob": "1990-11-20",
+      "experience": "8+ Years",
+      "department": "Pediatrics",
+      "designation": "Pediatrician",
+      "medicalLicenseNumber": "ML100000003",
+      "languages": [
+        "English"
+      ],
+      "bloodGroup": "O +ve",
+      "gender": "Female",
+      "bio": "Dr. Emily Carter focuses on child health and development with a warm and caring approach.",
+      "featured": false,
+      "available": "Fri, 24 Jan 2025",
+      "status": "Available",
+      "rating": 4.7,
+      "reviewCount": 76,
+      "appointment": {
+        "type": "Online Consultation",
+        "consultationCharge": 300
+      }
+    },
+    {
+      "id": "DT2004",
+      "profileImage": "https://randomuser.me/api/portraits/men/41.jpg",
+      "name": "Dr. David Lee",
+      "username": "davidlee",
+      "phone": "+1 54546 44444",
+      "email": "david@medicare.com",
+      "dob": "1983-05-05",
+      "experience": "14+ Years",
+      "department": "Gynecology",
+      "designation": "Gynecologist",
+      "medicalLicenseNumber": "ML100000004",
+      "languages": [
+        "English",
+        "Korean"
+      ],
+      "bloodGroup": "AB +ve",
+      "gender": "Male",
+      "bio": "Dr. David Lee specializes in women's health and reproductive medicine.",
+      "featured": false,
+      "available": "Tue, 21 Jan 2025",
+      "status": "Unavailable",
+      "rating": 4.6,
+      "reviewCount": 55,
+      "appointment": {
+        "type": "In-Person",
+        "consultationCharge": 250
+      }
+    },
+    {
+      "id": "DT2005",
+      "profileImage": "https://randomuser.me/api/portraits/women/22.jpg",
+      "name": "Dr. Anna Kim",
+      "username": "annakim",
+      "phone": "+1 54546 55555",
+      "email": "anna@medicare.com",
+      "dob": "1987-09-12",
+      "experience": "9+ Years",
+      "department": "Psychiatry",
+      "designation": "Psychiatrist",
+      "medicalLicenseNumber": "ML100000005",
+      "languages": [
+        "English",
+        "Korean"
+      ],
+      "bloodGroup": "A -ve",
+      "gender": "Female",
+      "bio": "Dr. Anna Kim helps patients overcome mental health challenges with compassionate care.",
+      "featured": true,
+      "available": "Mon, 27 Jan 2025",
+      "status": "Available",
+      "rating": 4.9,
+      "reviewCount": 112,
+      "appointment": {
+        "type": "Online Consultation",
+        "consultationCharge": 350
+      }
+    },
+    {
+      "id": "DT2006",
+      "profileImage": "https://randomuser.me/api/portraits/men/52.jpg",
+      "name": "Dr. John Smith",
+      "username": "johnsmith",
+      "phone": "+1 54546 45648",
+      "email": "john@medicare.com",
+      "dob": "1990-01-25",
+      "experience": "15+ Years",
+      "department": "Neurology",
+      "designation": "Neurologist",
+      "medicalLicenseNumber": "ML566659898",
+      "languages": [
+        "English",
+        "French"
+      ],
+      "bloodGroup": "O +ve",
+      "gender": "Male",
+      "bio": "Dr. John Smith is a leading neurologist with expertise in stroke treatment and brain disorders.",
+      "featured": true,
+      "available": "Thu, 30 Jan 2025",
+      "status": "Available",
+      "rating": 4.8,
+      "reviewCount": 143,
+      "appointment": {
+        "type": "Online Consultation",
+        "consultationCharge": 400
+      }
+    }
+  ],
+  "appointments": [
+    {
+      "patientName": "XXX",
+      "patientEmail": "kk@gmail.com",
+      "patientPhone": "9965727680",
+      "patientAge": "23",
+      "patientGender": "Male",
+      "reason": "ff",
+      "date": "2026-07-17",
+      "time": "10:00 AM",
+      "doctorId": "DT2001",
+      "doctorName": "Dr. Mick Thompson",
+      "department": "Cardiology",
+      "designation": "Cardiologist",
+      "fee": 499,
+      "id": "6LaJ5wCqjrM",
+      "status": "Pending",
+      "createdAt": "2026-07-15T07:48:43.767Z"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "I8IeT0N5ZJY",
+      "doctorId": "DT2001",
+      "doctorName": "Dr. Mick Thompson",
+      "message": "New appointment booked by XXX",
+      "patientName": "XXX",
+      "date": "2026-07-17",
+      "time": "10:00 AM",
+      "read": true,
+      "createdAt": "2026-07-15T07:48:43.811Z"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
