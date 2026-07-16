@@ -1,7 +1,7 @@
 import { createContext, useContext, useEffect, useState } from "react";
 
 // ── Base URL for json-server ──────────────────────────
-const API_URL = import.meta.env.VITE_API_URL;
+const API_URL = `import.meta.env.VITE_API_URL/doctors`;
 
 // ── Create Context ────────────────────────────────────
 const DoctorContext = createContext();
